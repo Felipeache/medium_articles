@@ -88,7 +88,7 @@ def main(data, context):
                                 "network": f'{project}',
                                 "subnetwork": f'https://www.googleapis.com/compute/v1/projects/{project}/regions/europe-west1/subnetworks/{project}-01', 
                 },
-                              'containerSpecGcsPath': f"gs://{project}-scripts/flex-template-metadata/dataflow-jaffa-metadata.json"
+                              'containerSpecGcsPath': f"gs://{project}-scripts/flex-template-metadata/dataflow-metadata.json"
                             }
     if "FILE_NAME_THAT_I_NEED" in blob:
         logging.info(f"{blob} is the file. A Dataflow job will start now")
